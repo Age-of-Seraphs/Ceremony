@@ -1,0 +1,23 @@
+[
+  {
+    "file": "game:blocktypes/paperlantern",
+    "op": "add",
+    "path": "/entityBehaviors",
+    "value": []
+  },
+  {
+    "file": "game:blocktypes/paperlantern",
+    "op": "add",
+    "path": "/entityBehaviors/-",
+    "value": {
+      "name": "CNetVariants",
+      "properties": {}
+    }
+  },
+  {
+    "file": "game:blocktypes/paperlantern",
+    "op": "add",
+    "path": "/creativeinventory/circuits",
+    "value": [ "*-off" ]
+  }
+]

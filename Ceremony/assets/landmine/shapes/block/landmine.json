@@ -1,0 +1,147 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"brass": [16,16],
+		"bomb-stone": [16,16],
+		"aged1": [16,16],
+		"iron1": [16,16]
+	},
+	"textures": {
+		"bomb-stone": "game:block/cloth/bomb-stone",
+		"brass": "game:block/metal/tarnished/brass",
+		"iron1": "game:block/metal/tarnished/sheet/iron1",
+		"aged1": "game:block/wood/path/aged1"
+	},
+	"elements": [
+		{
+			"name": "Plug",
+			"from": [ 7.0, 7.0, 7.0 ],
+			"to": [ 9.0, 11.0, 9.0 ],
+			"rotationOrigin": [ 7.0, 7.0, 7.0 ],
+			"faces": {
+				"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+				"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+			}
+		},
+		{
+			"name": "Plate",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 16.0, 1.0, 16.0 ],
+			"faces": {
+				"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+				"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+				"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+				"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+				"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+			},
+			"children": [
+				{
+					"name": "Crate_1",
+					"from": [ 4.0, 1.0, 3.0 ],
+					"to": [ 12.0, 8.0, 4.0 ],
+					"rotationOrigin": [ 4.0, 1.0, 3.0 ],
+					"faces": {
+						"north": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 7.0 ] },
+						"east": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"south": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 7.0 ] },
+						"west": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"up": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+						"down": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 1.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+					}
+				},
+				{
+					"name": "Crate_2",
+					"from": [ 4.0, 1.0, 12.0 ],
+					"to": [ 12.0, 8.0, 13.0 ],
+					"rotationOrigin": [ 4.0, 1.0, 12.0 ],
+					"faces": {
+						"north": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 7.0 ] },
+						"east": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"south": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 7.0 ] },
+						"west": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"up": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+						"down": { "texture": "#aged1", "uv": [ 0.0, 0.0, 8.0, 1.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+					}
+				},
+				{
+					"name": "Crate_3",
+					"from": [ 3.0, 1.0, 3.0 ],
+					"to": [ 4.0, 8.0, 13.0 ],
+					"rotationOrigin": [ 3.0, 1.0, 3.0 ],
+					"faces": {
+						"north": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"east": { "texture": "#aged1", "uv": [ 0.0, 0.0, 10.0, 7.0 ] },
+						"south": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"west": { "texture": "#aged1", "uv": [ 0.0, 0.0, 10.0, 7.0 ] },
+						"up": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 10.0 ] },
+						"down": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 10.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+					}
+				},
+				{
+					"name": "Crate_4",
+					"from": [ 12.0, 1.0, 3.0 ],
+					"to": [ 13.0, 8.0, 13.0 ],
+					"rotationOrigin": [ 12.0, 1.0, 3.0 ],
+					"faces": {
+						"north": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"east": { "texture": "#aged1", "uv": [ 0.0, 0.0, 10.0, 7.0 ] },
+						"south": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+						"west": { "texture": "#aged1", "uv": [ 0.0, 0.0, 10.0, 7.0 ] },
+						"up": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 10.0 ] },
+						"down": { "texture": "#aged1", "uv": [ 0.0, 0.0, 1.0, 10.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+					}
+				},
+				{
+					"name": "Bomb",
+					"from": [ 4.0, 1.0, 4.0 ],
+					"to": [ 12.0, 7.0, 12.0 ],
+					"rotationOrigin": [ 4.0, 1.0, 4.0 ],
+					"faces": {
+						"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 8.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+						"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 8.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+						"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 8.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+						"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 8.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+						"up": { "texture": "#bomb-stone", "uv": [ 7.5, 4.5, 15.5, 12.5 ], "windMode": [-1,-1,-1,-1] },
+						"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 8.0, 8.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+					}
+				},
+				{
+					"name": "Trigger",
+					"from": [ 7.5, 4.0, 7.5 ],
+					"to": [ 8.5, 15.0, 8.5 ],
+					"rotationOrigin": [ 0.0, 3.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 11.0 ] },
+						"east": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 11.0 ] },
+						"south": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 11.0 ] },
+						"west": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 11.0 ] },
+						"up": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"down": { "texture": "#iron1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Trigger2",
+					"from": [ 5.0, 15.0, 5.0 ],
+					"to": [ 11.0, 16.0, 11.0 ],
+					"faces": {
+						"north": { "texture": "#iron1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"east": { "texture": "#iron1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"south": { "texture": "#iron1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"west": { "texture": "#iron1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"up": { "texture": "#iron1", "uv": [ 4.5, 5.0, 10.5, 11.0 ] },
+						"down": { "texture": "#iron1", "uv": [ 4.0, 3.5, 10.0, 9.5 ] }
+					}
+				}
+			]
+		}
+	]}

@@ -1,0 +1,106 @@
+{
+  "code": "pullswitch",
+  "entityClass": "Generic",
+  "drawtype": "json",
+  "behaviors": [
+    {
+      "name": "CNetDeferInteract",
+      "properties": {
+        "bypassItems": [ "circuits:circuitwand" ]
+      }
+    },
+    {
+      "name": "OmniRotatable",
+      "properties": {
+        "rotateSides": "true",
+        "facing": "player"
+      }
+    }
+  ],
+  "entityBehaviors": [
+    { "name": "Animatable" },
+    {
+      "name": "CNetLever",
+      "properties": {
+        "nodeOffset": { "x": 0, "y": 0, "z": 0 },
+        "states": [
+          {
+            "index": 0,
+            "portId": "pullswitch.state",
+            "portName": "Pull Switch",
+            "onAnim": "on1",
+            "offAnim": "off1",
+            "animFps": 30,
+            "commitOnFrame": -1,
+            "commitOffFrame": 0
+          }
+        ]
+      }
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "rot",
+      "loadFromPropertiesCombine": [ "abstract/horizontalorientation", "abstract/verticalorientation" ]
+    }
+  ],
+  "creativeinventory": {
+    "circuits": [ "*south*" ]
+  },
+  "shapeByType": {
+    "*": {
+      "base": "circuits:block/inputs/rivvpullswitch",
+      "rotateXByType": {
+        "*up*": 180,
+        "*down*": 0,
+        "*north*": 90,
+        "*east*": 90,
+        "*south*": 90,
+        "*west*": 90
+      },
+      "rotateZByType": {
+        "*up*": 0,
+        "*down*": 0,
+        "*north*": 0,
+        "*east*": 90,
+        "*south*": 180,
+        "*west*": 270
+      }
+    }
+  },
+  "collisionSelectionBoxesByType": {
+    "*": [
+      {
+        "x1": 0.15,
+        "y1": 0,
+        "z1": 0.15,
+        "x2": 0.85,
+        "y2": 0.15,
+        "z2": 0.85,
+        "rotateXByType": {
+          "*up*": 180,
+          "*down*": 0,
+          "*north*": 90,
+          "*east*": 90,
+          "*south*": 90,
+          "*west*": 90
+        },
+        "rotateZByType": {
+          "*up*": 0,
+          "*down*": 0,
+          "*north*": 0,
+          "*east*": 90,
+          "*south*": 180,
+          "*west*": 270
+        }
+      }
+    ]
+  },
+  "replaceable": 160,
+  "faceCullMode": "NeverCull",
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "lightAbsorption": 0
+}

@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+	<Nullable>enable</Nullable>
+	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ceremony.csproj.Backup.tmp" />
+  </ItemGroup>
+
+<ItemGroup>
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Content Include="modicon.png" Condition="Exists('modicon.png')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="0Harmony">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Lib\0Harmony.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="cairo-sharp">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Lib\cairo-sharp.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="Newtonsoft.Json">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="OpenTK.Graphics">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Lib\OpenTK.Graphics.dll</HintPath>
+  </Reference>
+  <Reference Include="protobuf-net">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Lib\protobuf-net.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryAPI">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryAPI.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryLib">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryLib.dll</HintPath>
+  </Reference>
+  <Reference Include="VSCreativeMod">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VSEssentials">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Mods\VSEssentials.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VSSurvivalMod">
+    <HintPath>..\..\..\..\AppData\Roaming\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+</ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "game:blocktypes/metal/metalblock",
+    "op": "add",
+    "path": "/creativeinventory",
+    "value": {}
+  },
+  {
+    "file": "game:blocktypes/metal/metalblock",
+    "op": "add",
+    "path": "/creativeinventory/circuits",
+    "value": [ "metalblock-new-riveted-lead" ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "game:blocktypes/wood/woodtyped/door",
+    "op": "add",
+    "path": "/behaviors/0",
+    "value": {
+      "name": "CNetDeferInteract",
+      "properties": { "bypassItems": [ "circuits:circuitwand" ] }
+    }
+  },
+  {
+    "file": "game:blocktypes/metal/door*",
+    "op": "add",
+    "path": "/behaviors/0",
+    "value": {
+      "name": "CNetDeferInteract",
+      "properties": { "bypassItems": [ "circuits:circuitwand" ] }
+    }
+  },
+  {
+    "file": "game:blocktypes/devastation/devastation-door",
+    "op": "add",
+    "path": "/behaviors/0",
+    "value": {
+      "name": "CNetDeferInteract",
+      "properties": { "bypassItems": [ "circuits:circuitwand" ] }
+    }
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/door",
+    "op": "add",
+    "path": "/entityBehaviors/-",
+    "value": {
+      "name": "CNetDoor",
+      "properties": {}
+    }
+  },
+  {
+    "file": "game:blocktypes/metal/door*",
+    "op": "add",
+    "path": "/entityBehaviors/-",
+    "value": {
+      "name": "CNetDoor",
+      "properties": {}
+    }
+  },
+  {
+    "file": "game:blocktypes/devastation/devastation-door",
+    "op": "add",
+    "path": "/entityBehaviors/-",
+    "value": {
+      "name": "CNetDoor",
+      "properties": {}
+    }
+  },
+  {
+    "file": "game:blocktypes/metal/door",
+    "op": "add",
+    "path": "/creativeinventory",
+    "value": {}
+  },
+  {
+    "file": "game:blocktypes/metal/door",
+    "op": "add",
+    "path": "/creativeinventory/circuits",
+    "value": [ "*" ]
+  },
+  {
+    "file": "game:blocktypes/metal/door*",
+    "op": "add",
+    "path": "/creativeinventory/circuits",
+    "value": [ "*" ]
+  },
+  {
+    "file": "game:blocktypes/devastation/devastation-door",
+    "op": "add",
+    "path": "/creativeinventory",
+    "value": {}
+  },
+  {
+    "file": "game:blocktypes/devastation/devastation-door",
+    "op": "add",
+    "path": "/creativeinventory/circuits",
+    "value": [ "*" ]
+  }
+]

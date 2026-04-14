@@ -1,0 +1,135 @@
+{
+  "code": "key",
+  "maxstacksize": 1,
+  "attributes": {
+    "heldPriorityInteract": true
+  },
+  "creativeinventory": {
+    "general": [ "*" ],
+    "circuits": [ "*" ]
+  },
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "copper",
+        "brass",
+        "chromium",
+        "cupronickel",
+        "electrum",
+        "lead",
+        "bismuth",
+        "titanium",
+        "platinum",
+        "tinbronze",
+        "bismuthbronze",
+        "blackbronze",
+        "gold",
+        "silver",
+        "iron",
+        "meteoriciron",
+        "steel",
+        "zinc",
+        "uranium",
+        "corroded"
+      ]
+    }
+  ],
+  "shape": { "base": "circuits:item/key_metal" },
+  "texturesByType": {
+    "*corroded*": {
+      "brass": { "base": "game:item/resource/corroded/normal3" }
+    },
+    "*": {
+      "brass": { "base": "game:item/resource/plate/{metal}" }
+    }
+  },
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    }
+  ],
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 9,
+      "y": 137,
+      "z": -51
+    },
+    "origin": {
+      "x": 0.54,
+      "y": -0.05,
+      "z": 0.36
+    },
+    "scale": 2.92
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.1,
+      "y": 0.2,
+      "z": 0
+    },
+    "rotation": {
+      "x": 90,
+      "y": 99,
+      "z": -42
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2.15
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 4.31
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.78,
+      "y": -0.09,
+      "z": -0.67
+    },
+    "rotation": {
+      "x": 9,
+      "y": -1,
+      "z": -16
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 0.76
+  }
+}

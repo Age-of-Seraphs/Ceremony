@@ -1,0 +1,88 @@
+{
+  "code": "circuitdelay",
+  "entityClass": "Generic",
+  "variantgroups": [
+    {
+      "code": "state",
+      "states": [ "off", "on" ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "CNetDeferInteract",
+      "properties": {
+        "bypassItems": [ "circuits:circuitwand" ]
+      }
+    }
+  ],
+
+  "entityBehaviors": [
+    {
+      "name": "CNetDelay",
+      "properties": {
+        "delayMs": 3000
+      }
+    }
+  ],
+
+  "creativeinventory": {
+    "circuits": [ "*-off" ]
+  },
+  "vertexFlags": {
+    "glowLevel": 128
+  },
+  "lightHsvByType": {
+    "*-off": [
+      0,
+      0,
+      0
+    ],
+    "*-on": [
+      8,
+      2,
+      21
+    ]
+  },
+  "vertexFlagsByType": {
+    "*-off": { "glowLevel": 0 },
+    "*-on": { "glowLevel": 128 }
+  },
+
+  "shape": { "base": "game:block/basic/cube" },
+  "texturesByType": {
+    "*on*": {
+      "all": { "base": "circuits:block/cell/cell-inverted-jonas" }
+    },
+    "*off*": {
+      "all": { "base": "circuits:block/cell/cell-inverted-dead" }
+    }
+  },
+
+  "selectionboxes": [
+    {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1,
+      "z2": 1
+    }
+  ],
+  "collisionboxes": [
+    {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1,
+      "z2": 1
+    }
+  ],
+
+  "replaceable": 90,
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "lightAbsorption": 1
+}

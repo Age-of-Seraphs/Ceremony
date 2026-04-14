@@ -1,0 +1,48 @@
+{
+  "code": "landmine",
+  "class": "Block",
+  "entityClass": "landmine",
+
+  "variantgroups": [
+    {
+      "code": "trigger",
+      "states": [ "disarmed", "armed", "pressed" ]
+    }
+  ],
+
+  "creativeinventory": { "general": [ "*disarmed" ] },
+
+  "drawtype": "json",
+  "sideOpaque": {
+    "north": false,
+    "east": false,
+    "south": false,
+    "west": false,
+    "up": false,
+    "down": true
+  },
+  "shape": { "base": "landmine:shapes/block/landmine" },
+
+  "textures": {
+    "brass": { "base": "game:block/metal/tarnished/brass" },
+    "bomb-stone": { "base": "game:block/cloth/bomb-stone" },
+    "iron1": { "base": "game:block/metal/tarnished/sheet/iron1" },
+    "aged1": { "base": "game:block/wood/path/aged1" }
+  },
+
+  "resistance": 60,
+  "blockmaterial": "Metal",
+
+  "attributes": {
+    "blastRadius": 4,
+    "injureRadius": 8,
+    "blastType": 1,
+
+    "armDelaySeconds": 2.0,
+    "triggerRefreshMs": 5,
+    "triggerRadius": 0.95,
+    "triggerHeightOffset": 1,
+    "trespasserDmgMult": 999.0,
+    "dudChance": 0.05
+  }
+}

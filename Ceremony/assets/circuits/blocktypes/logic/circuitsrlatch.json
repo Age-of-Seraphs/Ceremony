@@ -1,0 +1,89 @@
+{
+  "code": "circuitsrlatch",
+  "entityClass": "Generic",
+  "variantgroups": [
+    {
+      "code": "latch",
+      "states": [ "free", "locked" ]
+    },
+    {
+      "code": "state",
+      "states": [ "off", "on" ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "CNetDeferInteract",
+      "properties": {
+        "bypassItems": [ "circuits:circuitwand" ]
+      }
+    }
+  ],
+
+  "entityBehaviors": [
+    { "name": "CNetSRLatch" }
+  ],
+
+  "creativeinventory": {
+    "circuits": [ "*-free-off" ]
+  },
+  "vertexFlags": {
+    "glowLevel": 128
+  },
+  "lightHsvByType": {
+    "*-free-off": [ 0, 0, 0 ],
+    "*-free-on": [ 8, 2, 21 ],
+    "*-locked-off": [ 0, 0, 0 ],
+    "*-locked-on": [ 8, 2, 21 ]
+  },
+  "vertexFlagsByType": {
+    "*-free-off": { "glowLevel": 0 },
+    "*-free-on": { "glowLevel": 128 },
+    "*-locked-off": { "glowLevel": 16 },
+    "*-locked-on": { "glowLevel": 160 }
+  },
+
+  "shape": { "base": "game:block/basic/cube" },
+  "texturesByType": {
+    "*free-off*": {
+      "all": { "base": "circuits:block/cell/cell-dead" }
+    },
+    "*free-on*": {
+      "all": { "base": "circuits:block/cell/cell-jonas" }
+    },
+    "*locked-off*": {
+      "all": { "base": "circuits:block/cell/cell-locked-dead" }
+    },
+    "*locked-on*": {
+      "all": { "base": "circuits:block/cell/cell-locked-jonas" }
+    }
+  },
+
+  "selectionboxes": [
+    {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1,
+      "z2": 1
+    }
+  ],
+  "collisionboxes": [
+    {
+      "x1": 0,
+      "y1": 0,
+      "z1": 0,
+      "x2": 1,
+      "y2": 1,
+      "z2": 1
+    }
+  ],
+
+  "replaceable": 90,
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "lightAbsorption": 1
+}

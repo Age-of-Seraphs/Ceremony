@@ -1,0 +1,204 @@
+{
+  "code": "circuitporthole",
+  "entityClass": "Generic",
+  "drawtype": "json",
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "1", "2", "3" ]
+    },
+    {
+      "code": "rot",
+      "loadFromPropertiesCombine": [ "abstract/horizontalorientation", "abstract/verticalorientation" ]
+    },
+    {
+      "code": "state",
+      "states": [ "off", "on" ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "CNetDeferInteract",
+      "properties": {
+        "bypassItems": [ "circuits:circuitwand" ]
+      }
+    },
+    {
+      "name": "OmniRotatable",
+      "properties": {
+        "rotateSides": "true",
+        "facing": "player"
+      }
+    }
+  ],
+
+  "entityBehaviors": [
+    {
+      "name": "CNetVariants",
+      "properties": {
+        "nodeOffset": {
+          "x": 0,
+          "y": 0,
+          "z": -0.5
+        },
+        "ports": [
+          {
+            "default": "variant.set",
+            "id": "porthole.set",
+            "name": "Set Porthole"
+          },
+          {
+            "default": "variant.state",
+            "id": "porthole.state",
+            "name": "Porthole State"
+          }
+        ]
+      }
+    }
+  ],
+
+  "creativeinventory": {
+    "circuits": [ "*-south-off" ]
+  },
+  "vertexFlags": {
+    "glowLevel": 128
+  },
+  "lightHsvByType": {
+    "*off*": [
+      0,
+      0,
+      0
+    ],
+    "*on*": [
+      8,
+      2,
+      21
+    ]
+  },
+  "vertexFlagsByType": {
+    "*off*": { "glowLevel": 0 },
+    "*on*": { "glowLevel": 128 }
+  },
+  "shapeByType": {
+    "*": {
+      "base": "game:block/devastation/machinery/porthole{type}",
+      "offsetXByType": {
+        "*up*": 0,
+        "*down*": 0,
+        "*north*": 0,
+        "*east*": 0.5,
+        "*south*": 0,
+        "*west*": -0.5
+      },
+      "offsetYByType": {
+        "*up*": 0.5,
+        "*down*": -0.5,
+        "*north*": 0,
+        "*east*": 0,
+        "*south*": 0,
+        "*west*": 0
+      },
+      "offsetZByType": {
+        "*up*": 0,
+        "*down*": 0,
+        "*north*": -0.5,
+        "*east*": 0,
+        "*south*": 0.5,
+        "*west*": 0
+      },
+
+      "rotateXByType": {
+        "*up*": 90,
+        "*down*": 270,
+        "*north*": 0,
+        "*east*": 0,
+        "*south*": 0,
+        "*west*": 0
+      },
+      "rotateYByType": {
+        "*up*": 0,
+        "*down*": 0,
+        "*north*": 0,
+        "*east*": 270,
+        "*south*": 180,
+        "*west*": 90
+      },
+      "rotateZByType": {
+        "*up*": 0,
+        "*down*": 0,
+        "*north*": 0,
+        "*east*": 0,
+        "*south*": 0,
+        "*west*": 0
+      }
+    }
+  },
+
+  "texturesByType": {
+    "*on*": { "tempglow": { "base": "circuits:block/glow/glow-jonas" } },
+    "*off*": { "tempglow": { "base": "game:block/coal/bituminous" } }
+  },
+
+  "collisionSelectionBoxesByType": {
+    "*1*": [
+      {
+        "x1": 0.25,
+        "y1": 0,
+        "z1": 0.25,
+        "x2": 0.75,
+        "y2": 0.125,
+        "z2": 0.75,
+        "rotateXByType": {
+          "*up*": 180,
+          "*down*": 0,
+          "*north*": 90,
+          "*east*": 90,
+          "*south*": 90,
+          "*west*": 90
+        },
+        "rotateZByType": {
+          "*up*": 0,
+          "*down*": 0,
+          "*north*": 0,
+          "*east*": 90,
+          "*south*": 180,
+          "*west*": 270
+        }
+      }
+    ],
+    "*": [
+      {
+        "x1": 0.1,
+        "y1": 0,
+        "z1": 0.1,
+        "x2": 0.9,
+        "y2": 0.15,
+        "z2": 0.9,
+        "rotateXByType": {
+          "*up*": 180,
+          "*down*": 0,
+          "*north*": 90,
+          "*east*": 90,
+          "*south*": 90,
+          "*west*": 90
+        },
+        "rotateZByType": {
+          "*up*": 0,
+          "*down*": 0,
+          "*north*": 0,
+          "*east*": 90,
+          "*south*": 180,
+          "*west*": 270
+        }
+      }
+    ]
+  },
+
+  "replaceable": 160,
+  "faceCullMode": "NeverCull",
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "lightAbsorption": 0
+}

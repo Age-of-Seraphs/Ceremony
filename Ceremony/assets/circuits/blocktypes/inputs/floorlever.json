@@ -1,0 +1,221 @@
+{
+  "code": "floorlever",
+  "entityClass": "Generic",
+  "drawtype": "json",
+  "behaviors": [
+    {
+      "name": "CNetDeferInteract",
+      "properties": {
+        "bypassItems": [ "circuits:circuitwand" ]
+      }
+    },
+    {
+      "name": "OmniRotatable",
+      "properties": {
+        "rotateH": "true",
+        "facing": "player"
+      }
+    }
+  ],
+
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "1", "2", "3", "4" ]
+    },
+    {
+      "code": "rot",
+      "loadFromProperties": "abstract/horizontalorientation"
+    }
+  ],
+
+  "entityBehaviorsByType": {
+    "*1*": [
+      { "name": "Animatable" },
+      {
+        "name": "CNetLever",
+        "properties": {
+          "nodeOffset": { "x": 0, "y": -0.35, "z": 0 },
+          "states": [
+            {
+              "index": 0,
+              "portId": "levers.state0",
+              "portName": "Lever #1",
+              "onAnim": "on1",
+              "offAnim": "off1",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            }
+          ]
+        }
+      }
+    ],
+    "*2*": [
+      { "name": "Animatable" },
+      {
+        "name": "CNetLever",
+        "properties": {
+          "nodeOffset": { "x": 0, "y": -0.35, "z": 0 },
+          "states": [
+            {
+              "index": 0,
+              "portId": "lever.state0",
+              "portName": "Lever #1",
+              "onAnim": "on1",
+              "offAnim": "off1",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 1,
+              "portId": "lever.state1",
+              "portName": "Lever #2",
+              "onAnim": "on2",
+              "offAnim": "off2",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            }
+          ]
+        }
+      }
+    ],
+    "*3*": [
+      { "name": "Animatable" },
+      {
+        "name": "CNetLever",
+        "properties": {
+          "nodeOffset": { "x": 0, "y": -0.35, "z": 0 },
+          "states": [
+            {
+              "index": 0,
+              "portId": "lever.state0",
+              "portName": "Lever #1",
+              "onAnim": "on1",
+              "offAnim": "off1",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 1,
+              "portId": "lever.state1",
+              "portName": "Lever #2",
+              "onAnim": "on2",
+              "offAnim": "off2",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 2,
+              "portId": "lever.state2",
+              "portName": "Lever #3",
+              "onAnim": "on3",
+              "offAnim": "off3",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            }
+          ]
+        }
+      }
+    ],
+    "*4*": [
+      { "name": "Animatable" },
+      {
+        "name": "CNetLever",
+        "properties": {
+          "nodeOffset": { "x": 0, "y": -0.35, "z": 0 },
+          "states": [
+            {
+              "index": 0,
+              "portId": "lever.state0",
+              "portName": "Lever #1",
+              "onAnim": "on1",
+              "offAnim": "off1",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 1,
+              "portId": "lever.state1",
+              "portName": "Lever #2",
+              "onAnim": "on2",
+              "offAnim": "off2",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 2,
+              "portId": "lever.state2",
+              "portName": "Lever #3",
+              "onAnim": "on3",
+              "offAnim": "off3",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            },
+            {
+              "index": 3,
+              "portId": "lever.state3",
+              "portName": "Lever #4",
+              "onAnim": "on4",
+              "offAnim": "off4",
+              "animFps": 40,
+              "commitOnFrame": -1,
+              "commitOffFrame": 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "creativeinventory": {
+    "circuits": [ "*east*" ]
+  },
+
+  "shapeByType": {
+    "*": {
+      "base": "circuits:block/inputs/rivvlever{type}x",
+      "rotateYByType": {
+        "*north*": 180,
+        "*east*": 90,
+        "*south*": 0,
+        "*west*": 270
+      }
+    }
+  },
+
+  "collisionSelectionBoxesByType": {
+    "*": [
+      {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 0.125,
+        "z2": 1,
+        "rotateYByType": {
+          "*north*": 180,
+          "*east*": 90,
+          "*south*": 0,
+          "*west*": 270
+        }
+      }
+    ]
+  },
+
+  "replaceable": 160,
+  "faceCullMode": "NeverCull",
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "lightAbsorption": 0
+}

@@ -1,0 +1,17 @@
+{
+  "code": "facade",
+  "class": "BlockFacade",
+  "entityClass": "Generic",
+  "behaviors": [ { "name": "BBFacade" } ],
+  "entityBehaviors": [ { "name": "BEBFacade" } ],
+  "shape": { "base": "game:block/basic/cube" },
+  "textures": { "all": { "base": "game:block/stone/rock/whitemarble1" } },
+  "sideopaque": {
+    "all": false
+  },
+  "creativeinventory": {
+    "circuits": [
+      "*"
+    ]
+  }
+}
